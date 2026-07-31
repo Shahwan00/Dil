@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="home-style.css">
+</head>
+<body>
 
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <i class="fa-brands fa-facebook logo"></i>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="بحث في فيسبوك...">
+            </div>
+        </div>
+        <div class="nav-center">
+            <a href="#" class="active"><i class="fa-solid fa-house"></i></a>
+            <a href="#"><i class="fa-solid fa-tv"></i></a>
+            <a href="#"><i class="fa-solid fa-store"></i></a>
+            <a href="#"><i class="fa-solid fa-users"></i></a>
+        </div>
+        <div class="nav-right">
+            <button class="icon-btn"><i class="fa-solid fa-bars"></i></button>
+            <button class="icon-btn"><i class="fa-brands fa-facebook-messenger"></i></button>
+            <button class="icon-btn"><i class="fa-solid fa-bell"></i></button>
+            <div class="profile-pic small"></div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <!-- القائمة الجانبية اليسرى -->
+        <aside class="sidebar left-sidebar">
+            <div class="menu-item">
+                <div class="profile-pic small"></div>
+                <span>اسم المستخدم</span>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-user-group text-blue"></i>
+                <span>الأصدقاء</span>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-flag text-orange"></i>
+                <span>إنشاء صفحة</span>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-bookmark text-purple"></i>
+                <span>العناصر المحفوظة</span>
+            </div>
+        </aside>
+
+        <!-- منطقة المنشورات -->
+        <main class="feed">
+
+            <!-- صندوق إنشاء منشور -->
+            <div class="card create-post">
+                <div class="create-post-top">
+                    <div class="profile-pic"></div>
+                    <input type="text" placeholder="بم تفكر؟">
+                </div>
+                <hr>
+                <div class="create-post-actions">
+                    <button><i class="fa-solid fa-video text-red"></i> فيديو مباشر</button>
+                    <button><i class="fa-solid fa-images text-green"></i> صورة / فيديو</button>
+                    <button><i class="fa-solid fa-face-smile text-yellow"></i> شعور / نشاط</button>
+                </div>
+            </div>
+
+            <!-- منشور تجريبي -->
+            <div class="card post">
+                <div class="post-header">
+                    <div class="profile-pic"></div>
+                    <div class="post-info">
+                        <h4>المستخدم</h4>
+                        <span>منذ ٥ دقائق · <i class="fa-solid fa-earth-americas"></i></span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>أهلاً بك! تم التوجيه بنجاح إلى واجهة الفيسبوك.</p>
+                </div>
+                <div class="post-media">
+                    <div class="media-placeholder"><i class="fa-regular fa-image"></i> مكان عرض الصور والفيديوهات</div>
+                </div>
+                <div class="post-stats">
+                    <span>❤️ 👍 125</span>
+                    <span>12 تعليقاً</span>
+                </div>
+                <hr>
+                <div class="post-actions">
+                    <button><i class="fa-regular fa-thumbs-up"></i> إعجاب</button>
+                    <button><i class="fa-regular fa-comment"></i> تعليق</button>
+                    <button><i class="fa-solid fa-share"></i> مشاركة</button>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- القائمة الجانبية اليمنى -->
+        <aside class="sidebar right-sidebar">
+            <h3>جهات الاتصال</h3>
+            <div class="menu-item">
+                <div class="profile-pic small online"></div>
+                <span>صديق 1</span>
+            </div>
+            <div class="menu-item">
+                <div class="profile-pic small online"></div>
+                <span>صديق 2</span>
+            </div>
+        </aside>
+
+    </div>
+
+</body>
+</html>
