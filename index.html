@@ -1,16 +1,14 @@
-Enter<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Back - Login</title>
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Animated Background Spans -->
     <div class="bg-animation">
         <span></span>
         <span></span>
@@ -18,13 +16,12 @@ Enter<!DOCTYPE html>
         <span></span>
     </div>
 
-    <!-- Main Container -->
     <div class="container">
-        <form class="login-box">
+        <!-- عند الضغط على الزر سيتم التوجه لصفحة home.html -->
+        <form class="login-box" onsubmit="event.preventDefault(); window.location.href='home.html';">
             <h2>Welcome Back</h2>
             <p>Login To Continue</p>
 
-            <!-- Email Input -->
             <div class="input-box">
                 <label>Email Address</label>
                 <div class="input-field">
@@ -33,7 +30,6 @@ Enter<!DOCTYPE html>
                 </div>
             </div>
 
-            <!-- Password Input -->
             <div class="input-box">
                 <label>Password</label>
                 <div class="input-field">
@@ -43,7 +39,6 @@ Enter<!DOCTYPE html>
                 </div>
             </div>
 
-            <!-- Options (Remember Me & Forgot Password) -->
             <div class="options">
                 <label class="remember-me">
                     <input type="checkbox" checked> Remember Me
@@ -51,12 +46,10 @@ Enter<!DOCTYPE html>
                 <a href="#" class="forgot-btn">Forgot Password?</a>
             </div>
 
-            <!-- Submit Button -->
             <button type="submit" class="login-btn">
                 <i class="fa-solid fa-check"></i> Login Successful
             </button>
 
-            <!-- Footer Text -->
             <p class="register-text">
                 Don't have an account? <a href="#">Register</a>
             </p>
